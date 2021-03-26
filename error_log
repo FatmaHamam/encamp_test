@@ -1,0 +1,1 @@
+[16-May-2020 13:37:35 Asia/Kolkata] PHP Fatal error:  Cannot redeclare App\Http\Controllers\PagesController::sevensis() in /home/nivpaoqr1ku3/public_html/app/Http/Controllers/PagesController.php on line 85
