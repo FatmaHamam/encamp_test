@@ -198,13 +198,13 @@
                                        <div class="form-group">
                                             <div class="form-check">
                                                 <label class="radio-inline"> 
-                                                  <input  class="ml-4" type="radio" name="trip_type" value="Solo" checked> Solo trip <small class="text-muted">(alone) </small>
+                                                  <input  class="ml-5 ml-md-0" type="radio" name="trip_type" value="Solo" checked> Solo trip <small class="text-muted">(alone) </small>
                                                 </label>
                                                 <label class="radio-inline">
-                                                  <input class="ml-4" type="radio" name="trip_type" value="Private"> Private trip <small class="text-muted">(for friends and family) </small>
+                                                  <input class="ml-5 mb-md-0" type="radio" name="trip_type" value="Private"> Private trip <small class="text-muted">(for friends and family) </small>
                                                 </label>
                                                 <label class="radio-inline">
-                                                  <input class="ml-4" type="radio" name="trip_type" value="Group"> Group trip <small class="text-muted">(travel with strangers) </small>
+                                                  <input class="ml-5 mb-md-0" type="radio" name="trip_type" value="Group"> Group trip <small class="text-muted">(travel with strangers) </small>
                                                 </label>
                                             </div>
                                         </div>
