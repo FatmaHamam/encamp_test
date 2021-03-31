@@ -193,22 +193,22 @@
                             <form action="/freedom-trip-to-meghalaya-leads" method="POST" class="search-destination">
                                 {{ csrf_field() }}
                                 <div class="row">
-                                     
+                                     <div class="text-dark ml-4"> I'm Interested in </div> 
                                     <div class="col-md align-items-end">
                                        <div class="form-group">
                                             <div class="form-check">
-                                                <label class="radio-inline"> I'm interested in 
-                                                  <input class="ml-4" type="radio" name="radio" checked> Solo trip <small class="text-muted">(alone) </small>
+                                                <label class="radio-inline"> 
+                                                  <input  class="ml-4" type="radio" name="trip_type" value="Solo" checked> Solo trip <small class="text-muted">(alone) </small>
                                                 </label>
                                                 <label class="radio-inline">
-                                                  <input class="ml-4" type="radio" name="radio"> Private trip <small class="text-muted">(for friends and family) </small>
+                                                  <input class="ml-4" type="radio" name="trip_type" value="Private"> Private trip <small class="text-muted">(for friends and family) </small>
                                                 </label>
                                                 <label class="radio-inline">
-                                                  <input class="ml-4" type="radio" name="radio"> Group trip <small class="text-muted">(travel with strangers) </small>
+                                                  <input class="ml-4" type="radio" name="trip_type" value="Group"> Group trip <small class="text-muted">(travel with strangers) </small>
                                                 </label>
                                             </div>
                                         </div>
-                                </div></div><br><br>
+                                </div></div>
                                     <div class="row">
                                         <div class="col-md-3 align-items-end">
                                             <div class="form-group">
@@ -236,15 +236,15 @@
 
                                                 <label for="No">No. of People</label>
                                                 <div class="form-field">
-                                                    <input type="number" id="quantity" name="No" min="1" max="10" class="form-control">
+                                                    <input type="number" id="quantity" name="No_people" min="1" max="10" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-2 align-items-end">
                                             <div class="form-group">
-                                                <label for="start">Date Range:</label>
+                                                <label for="start">Trip Date:</label>
                                                 <div class="form-field">
-                                                     <input class="form-control" type="text" name="daterange" id="demo"/>
+                                                     <input class="form-control" type="text" name="Trip_date" id="demo"/>
                                                 </div>
                                             </div>
                                         </div>
