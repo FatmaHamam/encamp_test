@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SalesMail;
 use App\Seven;
-use App\Meghalaya;
 
 class FreedomController extends Controller
 {
@@ -14,33 +13,20 @@ class FreedomController extends Controller
         $this->validate($request,[
             'name' => 'required',
             'phone' => 'required',
-            
+            'city' => 'required'
         ]);
 
-        $post = new Meghalaya;
+        $post = new Seven;
         $post->name = $request->input('name');
         $post->phone = $request->input('phone');
-        //$post->city = $request->input('city');
-        //$post->Trip_date= $request->input('Trip_date');
-        $post->trip_type= $request->input('trip_type');
-        $post->No_people= $request->input('No_people');
-        $daterange = $request->input('Trip_date');
-        $split = explode('-', $daterange);
-        $start = $split[0];
-        $end = $split[1];
-        $post->Trip_start_date = date('Y-m-d', strtotime($start));
-        $post->Trip_end_date = date('Y-m-d', strtotime($end)); 
-         $post->save();
+        $post->city = $request->input('city');
+        // $post->save();
 
-
-         $message = "Trip Type: ". $request->input('trip_type') ;
-         $message .= "<br> No_people: " . $request->input('No_people');
-         $message .= "<br> Trip_date: " . $request->input('Trip_date');
         $data = array(
             'name' => $request->name,
             'number' => $request->phone,
             'email' => '',
-            'message' => $message,
+            'message' => $request->city,
             'subject' => 'Sales Enquiry - Freedom Trip to Meghalaya'
         );       
                        

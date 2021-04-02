@@ -29,11 +29,6 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="adventure/css/floating-wpplol123.min.css">
 
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-
     
     <link rel="icon" type="image/png" href="{{ URL::asset('images/favicon-32x32.png') }}" sizes="32x32" />
     <style>
@@ -176,79 +171,56 @@
               	<form action="/sevenleads" method="POST" class="search-destination">
               	    {{ csrf_field() }}
               		<div class="row">
-                                     <div class="text-dark ml-4"> I'm Interested in </div> 
-                                    <div class="col-md align-items-end">
-                                       <div class="form-group">
-                                            <div class="form-check">
-                                                <label class="radio-inline"> 
-                                                  <input  class="ml-4" type="radio" name="trip_type" value="Solo" checked> Solo trip <small class="text-muted">(alone) </small>
-                                                </label>
-                                                <label class="radio-inline">
-                                                  <input class="ml-4" type="radio" name="trip_type" value="Private"> Private trip <small class="text-muted">(for friends and family) </small>
-                                                </label>
-                                                <label class="radio-inline">
-                                                  <input class="ml-4" type="radio" name="trip_type" value="Group"> Group trip <small class="text-muted">(travel with strangers) </small>
-                                                </label>
-                                            </div>
-                                        </div>
-                                </div></div>
-                                    <div class="row">
-                                        <div class="col-md-3 align-items-end">
-                                            <div class="form-group">
-                                                <label for="#">Full Name</label>
-                                                <div class="form-field">
-                                                    <div class="icon"><span class="icon-user"></span></div>
-                                                    <input type="text" name="name" class="form-control" placeholder="Name"
-                                                        required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 align-items-end">
-                                            <div class="form-group">
-                                                <label for="#">Phone Number</label>
-                                                <div class="form-field">
-                                                    <div class="icon"><span class="icon-phone"></span></div>
-                                                    <input type="text" name="phone" class="form-control"
-                                                        placeholder="Phone Number" maxlength="10" required>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="col-md-1 align-items-end">
-                                            <div class="form-group">
-
-                                                <label for="No">No. of People</label>
-                                                <div class="form-field">
-                                                    <input type="number" id="quantity" name="No_people" min="1" max="10" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2 align-items-end">
-                                            <div class="form-group">
-                                                <label for="start">Trip Date:</label>
-                                                <div class="form-field">
-                                                     <input class="form-control" type="text" name="Trip_date" id="demo"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- <div class="col-md-2 align-items-end">
-                                            <div class="form-group">
-                                                <div class="form-field">
-                                                    <label for="end">Trip End date:</label>
-                                                    <input type="date" id="birthday" name="end" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div> -->
-                                        <div class="col-md-2 align-self-end">
-                                        <div class="form-group">
-                                            <div class="form-field">
-                                                <input type="submit" value="Send Enquiry"
-                                                    class="form-control btn btn-primary">
-                                            </div>
-                                           
-                                        </div>
-                                    </div>
-                                       </div>
+              			<div class="col-md align-items-end">
+              				<div class="form-group">
+              					<label for="#">Full Name</label>
+	              				<div class="form-field">
+	              					<div class="icon"><span class="icon-user"></span></div>
+					                <input type="text" name="name" class="form-control" placeholder="Name" required>
+					              </div>
+				              </div>
+              			</div>
+              			<div class="col-md align-items-end">
+              				<div class="form-group">
+              					<label for="#">Phone Number</label>
+              					<div class="form-field">
+	              					<div class="icon"><span class="icon-phone"></span></div>
+					                <input type="text" name="phone" class="form-control" placeholder="Phone Number" maxlength="10" required>
+					              </div>
+				              </div>
+              			</div>
+              			<div class="col-md align-items-end">
+              				<div class="form-group">
+              					<label for="#">City</label>
+              					<div class="form-field">
+	              					<div class="icon"><span class="icon-map-marker"></span></div>
+					                <input type="text" name="city" class="form-control" placeholder="City" required>
+					              </div>
+				              </div>
+              			</div>
+              			<!-- <div class="col-md align-items-end">
+              				<div class="form-group">
+              					<label for="#">Travelers</label>
+              					<div class="form-field">
+	              					<div class="select-wrap">
+			                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+			                      <select name="" id="" class="form-control">
+			                      	<option value="">1</option>
+			                        <option value="">2</option>
+			                        <option value="">3</option>
+			                        <option value="">4</option>
+			                        <option value="">5</option>
+			                      </select>
+			                    </div>
+					              </div>
+				              </div>
+              			</div> -->
+              			<div class="col-md align-self-end">
+              				<div class="form-group">
+              					<div class="form-field">
+					                <input type="submit" value="Send Enquiry" class="form-control btn btn-primary">
+					              </div>
+				              </div>
               			</div>
               		</div>
               	</form>
@@ -523,21 +495,6 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
-</script>
- <script>
-// $(function() {
-//   $('input[name="daterange"]').daterangepicker({
-//     opens: 'left'
-//   }, function(start, end, label) {
-//     console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-//   });
-// });
-$('#demo').daterangepicker({
-    "startDate": "03/21/2021",
-    "endDate": "03/27/2021"
-}, function(start, end, label) {
-  console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
-});
 </script>
 
   <script src="adventure/js/jquery.min.js"></script>
