@@ -13,33 +13,20 @@ class DzukouController extends Controller
         $this->validate($request,[
             'name' => 'required',
             'phone' => 'required',
-            
+            'city' => 'required'
         ]);
 
         $post = new Dzukou;
         $post->name = $request->input('name');
         $post->phone = $request->input('phone');
-        $post->trip_type= $request->input('trip_type');
-        $post->No_people= $request->input('No_people');
-        $daterange = $request->input('Trip_date');
-        $split = explode('-', $daterange);
-        $start = $split[0];
-        $end = $split[1];
-        $post->Trip_start_date = date('Y-m-d', strtotime($start));
-        $post->Trip_end_date = date('Y-m-d', strtotime($end)); 
-         $post->save();
-
-
-         $message = "Trip Type: ". $request->input('trip_type') ;
-         $message .= "<br> No_people: " . $request->input('No_people');
-         $message .= "<br> Trip_date: " . $request->input('Trip_date');
+        $post->city = $request->input('city');
         // $post->save();
 
         $data = array(
             'name' => $request->name,
             'number' => $request->phone,
             'email' => '',
-            'message' => $message,
+            'message' => $request->city,
             'subject' => 'Sales Enquiry - Dzukou Valley Trek'
         );  
         
