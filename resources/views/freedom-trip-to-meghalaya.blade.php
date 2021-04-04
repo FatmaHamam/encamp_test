@@ -231,20 +231,20 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-1 align-items-end">
+                                        <div class="col-md-auto align-items-end">
                                             <div class="form-group">
-
                                                 <label for="No">No. of People</label>
                                                 <div class="form-field">
                                                     <input type="number" id="quantity" name="No_people" min="1" max="10" class="form-control">
+                                                
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-2 align-items-end">
+                                        <div class="col-md-auto align-items-end">
                                             <div class="form-group">
                                                 <label for="start">Trip Date:</label>
                                                 <div class="form-field">
-                                                     <input class="form-control" type="text" name="Trip_date" id="demo"/>
+                                                     <input class="form-control" type="text" name="Trip_date" id="demo" />
                                                 </div>
                                             </div>
                                         </div>
@@ -256,11 +256,10 @@
                                                 </div>
                                             </div>
                                         </div> -->
-                                        <div class="col-md-2 align-self-end">
+                                        <div class="col-md-2 col align-self-end">
                                         <div class="form-group">
                                             <div class="form-field">
-                                                <input type="submit" value="Send Enquiry"
-                                                    class="form-control btn btn-primary">
+                                                <input type="submit" value="Send Enquiry" class="form-control btn btn-primary">
                                             </div>
                                            
                                         </div>
