@@ -214,7 +214,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-1 align-items-end">
+                                        <div class="col-md-auto align-items-end">
                                             <div class="form-group">
 
                                                 <label for="No">No. of People</label>
@@ -223,7 +223,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-2 align-items-end">
+                                        <div class="col-md-auto align-items-end">
                                             <div class="form-group">
                                                 <label for="start">Trip Date:</label>
                                                 <div class="form-field">
