@@ -13,6 +13,9 @@ class DzukouController extends Controller
         $this->validate($request,[
             'name' => 'required',
             'phone' => 'required',
+            'trip_type' => 'required',
+            'No_people' => 'required', 
+            'Trip_date' => 'required',
             
         ]);
 
